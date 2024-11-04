@@ -1,5 +1,5 @@
 ---
-title: {{title}}
+title: 想法：{{title}-{{date:YYYYMMDD}}
 authors: Ethan Lin
 year: {{date:YYYY-MM-DD}}
 tags:
@@ -9,6 +9,4 @@ alias:
   - {{title}}
 ---
 
-
-tags: #日期/{{date:YYYY-MM-DD}} #类型/想法 
 
