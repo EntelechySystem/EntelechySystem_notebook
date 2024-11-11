@@ -149,14 +149,6 @@
       "key": "ArrowRight"
     }
   ],
-  "auto-note-mover:Move-the-note": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "M"
-    }
-  ],
   "switcher:open": [
     {
       "modifiers": [
@@ -176,6 +168,12 @@
       "modifiers": [
         "Mod",
         "Shift"
+      ],
+      "key": "I"
+    },
+    {
+      "modifiers": [
+        "Alt"
       ],
       "key": "I"
     }
@@ -541,12 +539,21 @@
       "key": "`"
     }
   ],
-  "bookmarks:bookmark-current-view": [
+  "workspaces:save": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
       ],
-      "key": "B"
+      "key": "S"
     }
-  ]
+  ],
+  "workspaces:load": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:save-file": []
 }
