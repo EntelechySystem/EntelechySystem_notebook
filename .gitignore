@@ -10,10 +10,10 @@ Resource/Subjects/
 
 Reference/
 
-.obsidian*/
-!.obsidian*/workspaces.json
-!.obsidian*/hotkeys.json
-!.obsidian*/bookmarks.json
+.obsidian*/*
+!.obsidian/workspaces.json
+!.obsidian/hotkeys.json
+!.obsidian/bookmarks.json
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,linux,python,julia,r,matlab,visualstudiocode,visualstudio,pycharm,obsidian,latex,lyx,sublimetext,octave,spark,stata,jupyternotebooks
