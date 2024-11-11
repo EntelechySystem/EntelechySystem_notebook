@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "path": "Notes/硬件/模拟神经元结构.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Management/search template/Entelechy System Theory 搜索模板.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/语言/语言结构.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/概念/概念与语言.drawio",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/机器功能/机器功能列表.xlsx",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/机器功能/机器功能.drawio",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/思维/思维过程.drawio",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Theory/LifeManagementSystem/生命周期管理系统.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Theory/EntelechySystem/生机系统 Entelechy System 之理论.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Theory/ComplexIntelligenceSystem/复杂智能体系统.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Notes/机制/概念机制.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Collection/想法：如何生成机器_2022-08-04.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "path": "Develope/开发笔记.md",
+      "ctime": 1683390611459
+    },
+    {
+      "type": "file",
+      "ctime": 1731294514353,
+      "path": "Notes/机制/意象机制.md"
+    },
+    {
+      "type": "group",
+      "ctime": 1731294650753,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1731295391911,
+          "path": "Projects/收集整理/项目：收集常用提示话术体系（思考、话题转移规则）.md"
+        },
+        {
+          "type": "file",
+          "path": "Projects/收集整理/项目：收集各种语言之结构.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "path": "Projects/案例：烧水倒水问题/项目：家里烧水倒水案例.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "path": "Notes/思维/解决问题之案例.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "ctime": 1731294578845,
+          "path": "Projects/项目：思维过程之设计变量之数据表示结构/案例：思维过程之于设计变量之数据表示结构.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294573462,
+          "path": "Collection/案例：获取与概念水关联的概念.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294568674,
+          "path": "Projects/项目：重构重建文件夹.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294564290,
+          "path": "Projects/项目：下中国象棋案例.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294559550,
+          "path": "Collection/案例：如何打印树结构的所有节点？.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294554994,
+          "path": "Notes/思维/案例：设计一个过程以在实例化中初始化一个属性.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731294548330,
+          "path": "Projects/案例：烧水倒水问题/案例：详细思维过程之于问题流程关于家里烧水_20210719.md"
+        },
+        {
+          "type": "file",
+          "path": "Notes/意象/项目：收集各种意象.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "path": "Notes/概念/项目：收集各种概念.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "ctime": 1731295384601,
+          "path": "Theory/LifeManagementSystem/项目：收集评价体系相关概念.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1731295402106,
+          "path": "History/档案：收集各种构式词项.md"
+        },
+        {
+          "type": "file",
+          "path": "Notes/语言/项目：收集分类词项标签.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "ctime": 1731295419577,
+          "path": "Projects/收集整理/项目：收集各种意象.md"
+        }
+      ],
+      "title": "案例项目"
+    },
+    {
+      "type": "group",
+      "ctime": 1731294693032,
+      "items": [
+        {
+          "type": "file",
+          "path": "Notes/机制/概念之属性.md",
+          "ctime": 1683390611459
+        },
+        {
+          "type": "file",
+          "path": "Notes/概念/例子：概念库内容.md",
+          "ctime": 1683390611459
+        }
+      ],
+      "title": "概念"
+    }
+  ]
+}
