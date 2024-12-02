@@ -10472,7 +10472,20 @@
           {
             "id": "31de0b2a215449ae",
             "type": "tabs",
+            "dimension": 52.019650655021834,
             "children": [
+              {
+                "id": "f50bd763ce7dee0d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "graph",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
+                }
+              },
               {
                 "id": "d6f1638d3cdef888",
                 "type": "leaf",
@@ -10620,11 +10633,13 @@
                   "title": "档案：语言拼图"
                 }
               }
-            ]
+            ],
+            "currentTab": 5
           },
           {
             "id": "aa3737912f9bcf15",
             "type": "tabs",
+            "dimension": 47.980349344978166,
             "children": [
               {
                 "id": "5fcb5155a2a3f9b4",
@@ -10744,8 +10759,7 @@
                   "title": "Recent Files"
                 }
               }
-            ],
-            "currentTab": 4
+            ]
           }
         ],
         "direction": "horizontal",
@@ -10766,10 +10780,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Theory/EntelechySystem/生机系统 Entelechy System 之理论.md"
+                    "file": "Notes/语言/语言结构.md"
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 生机系统 Entelechy System 之理论"
+                  "title": "Outline of 语言结构"
                 }
               }
             ]
@@ -10785,7 +10799,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Theory/EntelechySystem/生机系统 Entelechy System 之理论.md",
+                    "file": "Notes/语言/语言结构.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -10795,7 +10809,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for 生机系统 Entelechy System 之理论"
+                  "title": "Backlinks for 语言结构"
                 }
               },
               {
@@ -10940,45 +10954,8 @@
           "obsidian-wordnet-plugin:WordNet Dictionary": false
         }
       },
-      "floating": {
-        "id": "5f1fd08413519c0c",
-        "type": "floating",
-        "children": [
-          {
-            "id": "868c3e6de84ea48f",
-            "type": "window",
-            "children": [
-              {
-                "id": "4d2a2d4118468df4",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "f50bd763ce7dee0d",
-                    "type": "leaf",
-                    "pinned": true,
-                    "state": {
-                      "type": "graph",
-                      "state": {},
-                      "pinned": true,
-                      "icon": "lucide-git-fork",
-                      "title": "Graph view"
-                    }
-                  }
-                ]
-              }
-            ],
-            "direction": "vertical",
-            "x": 660,
-            "y": 45,
-            "width": 1636,
-            "height": 1302,
-            "maximize": false,
-            "zoom": 0
-          }
-        ]
-      },
-      "active": "d6f1638d3cdef888",
-      "mtime": "2024-11-11T11:31:42+08:00"
+      "active": "33acd4822a4615bb",
+      "mtime": "2024-12-02T15:42:17+08:00"
     },
     "思维和运作机制": {
       "main": {
@@ -12008,7 +11985,8 @@
                   "title": "项目：家里烧水倒水案例"
                 }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -12114,10 +12092,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Develope/开发笔记.md"
+                    "file": "Projects/案例：烧水倒水问题/项目：家里烧水倒水案例.md"
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of 开发笔记"
+                  "title": "Outline of 项目：家里烧水倒水案例"
                 }
               }
             ]
@@ -12133,7 +12111,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Develope/开发笔记.md",
+                    "file": "Projects/案例：烧水倒水问题/项目：家里烧水倒水案例.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -12143,7 +12121,7 @@
                     "unlinkedCollapsed": true
                   },
                   "icon": "links-coming-in",
-                  "title": "Backlinks for 开发笔记"
+                  "title": "Backlinks for 项目：家里烧水倒水案例"
                 }
               },
               {
@@ -12288,9 +12266,9 @@
           "obsidian-wordnet-plugin:WordNet Dictionary": false
         }
       },
-      "active": "fe3d52b8afdf6b36",
-      "mtime": "2024-11-11T15:56:14+08:00"
+      "active": "51634459f01af39c",
+      "mtime": "2024-12-02T15:31:37+08:00"
     }
   },
-  "active": "世界"
+  "active": "思维和运作机制"
 }
