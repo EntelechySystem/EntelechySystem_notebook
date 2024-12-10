@@ -1,17 +1,17 @@
 ---
-title: 生机系统 Entelechy System 之理论
+title: 生机系统 Entelechy System 之笔记
 authors: Ethan Lin
-year: 2022-06-07 
+year: 2022-06-07
 tags:
-  - 日期/2022-06-07 
-  - 类型/文章 
-  - 项目/EntelechySystem 
-  - 内容/人工智能 
-  - 发布/ES 
+  - 日期/2022-06-07
+  - 类型/文章
+  - 项目/EntelechySystem
+  - 内容/人工智能
+  - 发布/ES
 ---
 
 
-# 生机系统 Entelechy System 之理论
+# 生机系统 Entelechy System 之笔记
 
 
 
@@ -19,7 +19,7 @@ tags:
 
 
 > [!info] 版本
-> V0.2.1
+> V0.0.8
 >
 > 该版本起于2022年06月07日，于岳麓山下桃子湖畔，至于今为2022年。
 
