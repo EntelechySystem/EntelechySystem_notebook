@@ -79,13 +79,13 @@ tags:
 
 生机系统由四大子系统构成。这四个子系统相关的开发的仓库链接为：
 
--   [复杂智能体系统（Complex Intelligence System, CIS）](https://github.com/EthanSystem/ComplexIntelligenceSystem.git)；
+-   [复杂智能体系统（Complex Intelligence System, CIS）](https://github.com/EntelechySystem/ComplexIntelligenceSystem.git)；
     
--   [基本概念系统（Elemental Conception System，ECS）](https://github.com/EthanSystem/ElementalConceptionSystem.git)；
+-   [基本概念系统（Elemental Conception System，ECS）](https://github.com/EntelechySystem/ElementalConceptionSystem.git)；
     
--   [生命周期管理系统（Life Management System，LMS）](https://github.com/EthanSystem/LifeManagementSystem.git)；
+-   [生命周期管理系统（Life Management System，LMS）](https://github.com/EntelechySystem/LifeManagementSystem.git)；
     
--   [多智能体世界系统（Agents World System，AWS）](https://github.com/EthanSystem/AgentsWorldSystem.git)；
+-   [多智能体世界系统（Agents World System，AWS）](https://github.com/EntelechySystem/AgentsWorldSystem.git)；
     
 
 
