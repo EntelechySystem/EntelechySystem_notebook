@@ -15,6 +15,7 @@ Reference/
 !.obsidian/hotkeys.json
 !.obsidian/bookmarks.json
 
+/Subjects
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,linux,python,julia,r,matlab,visualstudiocode,visualstudio,pycharm,obsidian,latex,lyx,sublimetext,octave,spark,stata,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,linux,python,julia,r,matlab,visualstudiocode,visualstudio,pycharm,obsidian,latex,lyx,sublimetext,octave,spark,stata,jupyternotebooks
@@ -1384,3 +1385,4 @@ FodyWeavers.xsd
 
 
 /.trash
+
