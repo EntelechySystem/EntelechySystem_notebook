@@ -542,6 +542,7 @@
   "workspaces:save": [
     {
       "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "S"
@@ -554,6 +555,14 @@
         "Mod"
       ],
       "key": "L"
+    }
+  ],
+  "workspaces:open-modal": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "S"
     }
   ]
 }
