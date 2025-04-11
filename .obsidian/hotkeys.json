@@ -113,8 +113,7 @@
   "file-explorer:move-file": [
     {
       "modifiers": [
-        "Mod",
-        "Shift"
+        "Alt"
       ],
       "key": "M"
     }
@@ -525,7 +524,7 @@
   "command-palette:open": [
     {
       "modifiers": [
-        "Alt"
+        "Ctrl"
       ],
       "key": " "
     }
@@ -539,15 +538,6 @@
       "key": "`"
     }
   ],
-  "workspaces:save": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
   "editor:save-file": [],
   "workspaces:save-and-load": [
     {
@@ -557,12 +547,50 @@
       "key": "L"
     }
   ],
-  "workspaces:open-modal": [
+  "bookmarks:bookmark-current-view": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "B"
+    }
+  ],
+  "workspaces:save": [
     {
       "modifiers": [
         "Mod"
       ],
       "key": "S"
     }
-  ]
+  ],
+  "workspaces:open-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:rename-heading": [
+    {
+      "modifiers": [],
+      "key": "F2"
+    }
+  ],
+  "workspace:edit-file-title": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F2"
+    }
+  ],
+  "copilot:chat-open-window": [
+    {
+      "modifiers": [],
+      "key": "F1"
+    }
+  ],
+  "app:open-help": []
 }
