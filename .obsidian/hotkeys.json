@@ -542,6 +542,7 @@
   "workspaces:save-and-load": [
     {
       "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "L"
@@ -592,5 +593,13 @@
       "key": "F1"
     }
   ],
-  "app:open-help": []
+  "app:open-help": [],
+  "workspaces:load": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ]
 }
