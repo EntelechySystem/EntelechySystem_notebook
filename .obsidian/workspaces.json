@@ -1925,8 +1925,17 @@
                   "state": {
                     "file": "Theory/ElementalConceptionSystem/基本概念系统.md",
                     "mode": "source",
+                    "source": false,
                     "backlinks": true,
-                    "source": false
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
                   },
                   "pinned": true,
                   "icon": "lucide-file",
@@ -1982,8 +1991,17 @@
                   "state": {
                     "file": "History/档案：收集各种构式词项.md",
                     "mode": "preview",
+                    "source": false,
                     "backlinks": true,
-                    "source": false
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
                   },
                   "icon": "lucide-file",
                   "title": "档案：收集各种构式词项"
@@ -2085,8 +2103,8 @@
                 "state": {
                   "type": "starred",
                   "state": {},
-                  "icon": "lucide-file",
-                  "title": "Plugin no longer active"
+                  "icon": "lucide-ghost",
+                  "title": "starred"
                 }
               },
               {
@@ -2144,7 +2162,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Theory/ElementalConceptionSystem/基本概念系统.md"
+                    "file": "Theory/ElementalConceptionSystem/基本概念系统.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
                   },
                   "icon": "lucide-list",
                   "title": "Outline of 基本概念系统"
@@ -2303,6 +2324,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "bases:Create new base": false,
           "switcher:Open quick switcher": false,
           "graph:Open graph view": false,
           "canvas:Create new canvas": false,
@@ -2314,12 +2336,11 @@
           "random-note:Open random note": false,
           "audio-recorder:Start/stop recording": false,
           "workspaces:Manage workspace layouts": false,
-          "open-vscode:VSCode": false,
-          "obsidian-wordnet-plugin:WordNet Dictionary": false
+          "open-vscode:VSCode": false
         }
       },
       "active": "ac98ef4649e3a239",
-      "mtime": "2024-11-11T11:39:20+08:00"
+      "mtime": "2026-01-05T12:54:03+08:00"
     },
     "世界": {
       "main": {
@@ -3152,11 +3173,11 @@
         "type": "split",
         "children": [
           {
-            "id": "31de0b2a215449ae",
+            "id": "d1b30164d713bf63",
             "type": "tabs",
             "children": [
               {
-                "id": "66c3677806b4f9ef",
+                "id": "2cac8679a360f9c6",
                 "type": "leaf",
                 "state": {
                   "type": "empty",
@@ -3237,8 +3258,8 @@
                 "state": {
                   "type": "recent-files",
                   "state": {},
-                  "icon": "clock",
-                  "title": "Recent Files"
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
                 }
               }
             ]
@@ -3410,8 +3431,8 @@
                 "state": {
                   "type": "calendar",
                   "state": {},
-                  "icon": "calendar-with-checkmark",
-                  "title": "Calendar"
+                  "icon": "lucide-ghost",
+                  "title": "calendar"
                 }
               }
             ],
@@ -3424,6 +3445,7 @@
       },
       "left-ribbon": {
         "hiddenItems": {
+          "bases:Create new base": false,
           "switcher:Open quick switcher": false,
           "graph:Open graph view": false,
           "canvas:Create new canvas": false,
@@ -3438,8 +3460,8 @@
           "open-vscode:VSCode": false
         }
       },
-      "active": "66c3677806b4f9ef",
-      "mtime": "2025-04-07T17:47:37+08:00"
+      "active": "2cac8679a360f9c6",
+      "mtime": "2025-12-31T11:05:11+08:00"
     }
   },
   "active": "empty"
