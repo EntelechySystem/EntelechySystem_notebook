@@ -1,0 +1,449 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[12pt,openany]{book}
+
+% --- XeLaTeX + 中文支持 ---
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\geometry{a4paper, left=27mm, right=27mm, top=25mm, bottom=25mm}
+
+% 段落与排版细节（更接近“书”）
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.4em}
+\usepackage{microtype}
+
+% 常见中文字体（优先 Songti SC，其次华文中宋；英文字体优先使用系统字体，不存在则回退到 TeX Gyre）
+\IfFontExistsTF{Times New Roman}{
+  \setmainfont{Times New Roman} % 英文主字体
+}{
+  \setmainfont{TeX Gyre Termes} % Times 风格回退字体
+}
+
+\IfFontExistsTF{Arial}{
+  \setsansfont{Arial}           % 英文无衬线字体
+}{
+  \setsansfont{TeX Gyre Heros}  % Helvetica 风格回退字体
+}
+
+\IfFontExistsTF{Menlo}{
+  \setmonofont{Menlo}              % macOS 常见等宽字体
+}{
+  \setmonofont{Latin Modern Mono}  % 最通用回退字体
+}
+
+% 中文主字体优先 Songti SC，次选华文中宋
+\IfFontExistsTF{Songti SC}{
+  \setCJKmainfont{Songti SC}
+  \setCJKsansfont{Songti SC}
+  \setCJKmonofont{Songti SC}
+}{
+  \setCJKmainfont{STZhongsong}
+  \setCJKsansfont{STZhongsong}
+  \setCJKmonofont{STZhongsong}
+}
+
+% --- 数学与排版 ---
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+
+% 更标准的页眉页脚
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\addtolength{\topmargin}{-2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 超链接（书籍更推荐让链接颜色更克制）
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!60!black,
+  citecolor=blue!60!black,
+  pdfauthor={symbolic\_computation\_engine},
+  pdftitle={论符号计算系统},
+  pdfsubject={符号计算系统的表征、抽象代数语义与工程框架},
+  pdfkeywords={symbolic computation, polynomial, ring, ideal, quotient, e-graph, equality saturation, ECS}
+}
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% 代码环境（用于展示 Python/伪代码）
+\lstdefinestyle{mystyle}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{black!20},
+  keywordstyle=\color{blue!70!black},
+  commentstyle=\color{green!50!black},
+  stringstyle=\color{orange!70!black}
+}
+\lstset{style=mystyle}
+
+% 定理环境（本书用“定义/注”，避免过度学术化）
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{remark}{注}[chapter]
+
+% --- 书目信息 ---
+\newcommand{\BookTitle}{论符号计算系统}
+\newcommand{\BookSubtitle}{——表征、抽象代数语义与 E-Graph 工程框架}
+\newcommand{\BookAuthor}{（本项目研究性文档，作者可自行补充）}
+\newcommand{\BookDate}{2026\,年\,01\,月}
+
+\title{\Huge \BookTitle\\[6pt]\large \BookSubtitle}
+\author{\BookAuthor}
+\date{\BookDate}
+
+\begin{document}
+
+% -----------------
+% 前置页（front matter）
+% -----------------
+\frontmatter
+\maketitle
+
+% 版权页（简化版）
+\cleardoublepage
+\thispagestyle{empty}
+\begin{center}
+  \vspace*{0.25\textheight}
+  {\Large \BookTitle}\\[10pt]
+  {\BookSubtitle}\\[20pt]
+  {\BookAuthor}\\[10pt]
+  {\BookDate}\\[20pt]
+  \vfill
+  \small
+  本文档为研究/探索型项目资料，随项目演进持续更新。\\
+  如需引用，请注明项目目录：\texttt{symbolic\_computation\_engine}。
+\end{center}
+
+% 献词页
+\cleardoublepage
+\thispagestyle{empty}
+\begin{center}
+  \vspace*{0.35\textheight}
+  \emph{献给：喜欢把“形式系统”当作工程系统来实现的人。}
+\end{center}
+
+% 序言（Preface）
+\cleardoublepage
+\chapter*{序}
+\addcontentsline{toc}{chapter}{序}
+
+本文档是对一个独立探索项目（\texttt{symbolic\_computation\_engine}）的稳定论述。研究重点不是某一类具体任务（例如函数求导），而是\textbf{符号计算系统本身}：
+
+\begin{itemize}
+  \item 用怎样的\textbf{表达式表征}承载推导与化简；
+  \item 如何把\textbf{抽象代数}（环、模、理想、商结构）作为语义边界与等价关系来源；
+  \item 如何在工程上选用合适的数据结构与计算框架，使系统可扩展、可调试、可演进。
+\end{itemize}
+
+由于处于早期研究阶段，本书将问题域刻意收敛到：
+
+\begin{itemize}
+  \item \textbf{多项式表达式}（变量、常数、加减乘、幂的可选扩展）；
+  \item \textbf{圆括号}作为顺序与嵌套结构（用以表达组合与优先级，而不是作为独立算子）；
+  \item 与之对应的代数语义：\textbf{环（ring）}、\textbf{模（module）}、\textbf{理想（ideal）}与\textbf{商环/商模（quotient）}。
+\end{itemize}
+
+本书对 E-Graph 的引用与借鉴，仅限于\textbf{其表征方式与等价维护方法}（E-Class/E-Node、Union-Find、hash-cons、extraction/提取），并以此作为系统设计的核心坐标。
+
+\tableofcontents
+\thispagestyle{plain}
+
+% -----------------
+% 正文（main matter）
+% -----------------
+\mainmatter
+
+\chapter{研究范围与系统契约}
+
+\section{输入语言：多项式与括号嵌套}
+
+我们研究的表达式族可以理解为一个极简语法（示意）：
+
+\begin{align*}
+E &::= E + E \mid E - E \mid E \times E \mid (E) \mid x \mid c
+\end{align*}
+
+其中 $x$ 为变量，$c$ 为常数（本阶段可取整数或有理数；工程原型中可暂用浮点，但语义上建议以精确数为目标）。
+括号 ``(E)'' 并不是一个算子，它只表示\textbf{抽象语法树/图的嵌套结构}。
+
+\section{系统输出：化简、规范化与等价证明的工程接口}
+
+一个早期的符号系统至少需要能回答三类问题：
+
+\begin{itemize}
+  \item \textbf{构造}：如何把输入表达式转成内部 IR；
+  \item \textbf{化简/规范化}：如何得到更短、更结构化的表达；
+  \item \textbf{等价}：如何表达并维护 ``A 与 B 等价'' 的证据（至少是可追踪的规则应用链，或可重放的重写过程）。
+\end{itemize}
+
+本书把 ``等价维护'' 视为第一等公民，这也是选择 E-Graph 表征的原因。
+
+\chapter{表征问题：AST、DAG 与 E-Graph 的分工}
+
+\section{AST：语法直观，但等价维护与共享是外部工作}
+
+AST（树）在解析阶段具有天然优势：结构与括号直接对应。但一旦进入化简阶段：
+
+\begin{itemize}
+  \item 共享子表达式需要额外做 CSE（公共子表达式消除）；
+  \item 等价关系往往通过 ``顺序敏感'' 的 rewrite 管线维护；
+  \item 任何一次替换都可能破坏之前的结构共识，难以调试与复用。
+\end{itemize}
+
+因此，AST 是良好的\textbf{入口表征}，但不是理想的\textbf{推理工作台}。
+
+\section{DAG：共享子表达式的工程表征}
+
+DAG（有向无环图）将表达式中的 ``引用'' 变成可共享结构。最常见的工程实现是一种\textbf{结构驻留（hash-cons）}：
+
+\begin{itemize}
+  \item 为每个节点构造一个可哈希的 key：\texttt{(op, child\_1, child\_2, ...)}；
+  \item 相同 key 复用同一个节点；
+  \item 从构造之初就得到共享结构。
+\end{itemize}
+
+对于多项式类表达式，这个技巧尤其重要：例如 $(x+y)^2$ 若不共享，展开与合并时会引入大量重复子结构。
+
+\begin{remark}
+DAG 解决的是\textbf{结构共享}问题，但它并不主动维护 ``形式不同但语义等价'' 的关系。
+要回答 $x+x$ 与 $2x$ 的等价，需要额外的推理层。
+\end{remark}
+
+\section{E-Graph：把等价关系变成数据结构}
+
+E-Graph 的核心贡献在于，它把 ``等价'' 内化为结构：
+
+\begin{itemize}
+  \item \textbf{E-Class}：一个等价类，代表 ``同一个意义''；
+  \item \textbf{E-Node}：一个顶层构造（例如加法、乘法），其孩子指向 E-Class；
+  \item \textbf{Union-Find}：维护 E-Class 的合并；
+  \item \textbf{hash-cons}：去重 E-Node（基于孩子 e-class 的 key）。
+\end{itemize}
+
+这使得：当我们说 ``某处引用了一个 E-Class''，实际上是在引用\textbf{一组等价表达式的集合}。
+
+\chapter{E-Graph 表征细节：E-Class、E-Node 与 Extraction}
+
+\section{E-Node 的数据形态：操作符 + 子等价类}
+
+\begin{definition}[E-Node]
+一个 E-Node 表示表达式的顶层形状：
+\[
+\text{enode} = (\mathrm{op};\; c_1, c_2, \ldots, c_k)
+\]
+其中 $\mathrm{op}$ 是操作符（如 $+$、$\times$），$c_i$ 是 E-Class 的标识。
+\end{definition}
+
+在多项式语义下，通常需要额外标记：
+
+\begin{itemize}
+  \item 操作符的结合性与交换性（如加法/乘法通常是交换且结合）；
+  \item 常量与变量节点的载荷（例如整数系数、变量名）；
+  \item 项的有序/无序表示（例如加法项列表是否需要排序）。
+\end{itemize}
+
+\section{E-Class 的意义：等价类作为“语义单元”}
+
+E-Class 可以理解为 ``某个语义值的名字''。它的工程意义是：
+
+\begin{itemize}
+  \item 任何重写规则的目标不是 ``替换树''，而是\textbf{合并等价类}；
+  \item 多条规则并行加入结构，不需要决定严格的执行顺序；
+  \item 最终通过提取（extraction）选择一个人类/机器更偏好的代表形式。
+\end{itemize}
+
+\section{Extraction：从等价集合中选一个代表式}
+
+\begin{definition}[Extraction]
+给定一个 E-Graph 与一个代价函数 $\mathrm{cost}(\cdot)$，提取过程输出某个表达式 $e$，使得：
+\[
+  e \in [E] \quad \text{并且} \quad \mathrm{cost}(e) \text{最小}
+\]
+其中 $[E]$ 表示目标 E-Class 所代表的等价表达式集合。
+\end{definition}
+
+对于早期系统，代价函数可以极简：节点数、乘法数、最大嵌套深度等。
+但从研究角度看，代价函数是把抽象代数语义与工程目标连接起来的接口。
+
+\chapter{抽象代数语义：环、理想与商结构如何进入系统}
+
+\section{为什么要显式引入抽象代数？}
+
+多项式化简不是 ``字符串替换''，它依赖清晰的语义边界：
+
+\begin{itemize}
+  \item 系数来自哪个环（如 $\mathbb{Z}$、$\mathbb{Q}$、有限域 $\mathbb{F}_p$）；
+  \item 变量集合是什么；
+  \item 允许的等价关系有哪些（例如是否引入某个理想的生成元）。
+\end{itemize}
+
+抽象代数给出的不是 ``更多规则''，而是\textbf{更结构化的规则来源}。
+
+\section{环上的多项式：基础代数语义}
+
+我们可以把表达式解释为环 $R$ 上的多项式环 $R[x_1,\dots,x_n]$ 的项。
+在这种语义下，基本等价来自环公理：
+
+\begin{itemize}
+  \item 加法交换/结合；乘法交换（对交换环）/结合；分配律；
+  \item 0 与 1 的单位性质；
+  \item 加法逆元（负号）。
+\end{itemize}
+
+在工程上，这意味着：
+
+\begin{itemize}
+  \item 允许将 $x + x$ 合并为 $2x$；
+  \item 允许将 $(a+b)+c$ 重排为 $a+(b+c)$，并进一步 ``扁平化'' 为项列表；
+  \item 允许对项排序以得到某种规范形（例如按字典序排列单项式）。
+\end{itemize}
+
+\section{理想与商环：以“约束”定义新的等价}
+
+引入理想 $I\triangleleft R[x]$ 后，商环 $R[x]/I$ 将把 ``差落在理想里'' 的两个多项式视为等价。
+例如，给定生成元集合 $G=\{g_1,\dots,g_m\}$，若 $f-g\in\langle G\rangle$，则在商环语义下 $f\equiv g$。
+
+\begin{remark}
+这给 E-Graph 提供了关键接口：\textbf{等价关系不止来自“基础公理”，还来自“用户引入的约束/生成元”。}
+工程上，这意味着规则库是可配置的，而不是写死的。
+\end{remark}
+
+\section{多项式代数操作的理论基础与工程实现}
+
+本节系统梳理多项式代数运算的主要操作，分别从抽象代数理论与 DAG/E-Graph 工程实现角度进行说明。
+
+\subsection{表达式树结构与 DAG/E-Graph 表征}
+
+
+  	\textbf{理论基础：} 多项式表达式可用树（AST）或有向无环图（DAG）结构表示，叶节点为变量或常数，内部节点为加、减、乘、除、幂等运算符。抽象代数中，这对应于多项式环 $R[x_1,\dots,x_n]$ 的项结构。
+
+  	\textbf{工程实现：} DAG 通过结构驻留（hash-cons）实现子表达式共享，E-Graph 则进一步将等价类（E-Class）作为节点引用，实现表达式的等价关系维护。
+
+\subsection{结合律、交换律、分配律}
+  	\textbf{理论基础：} 加法、乘法满足结合律与交换律，乘法对加法满足分配律：
+\begin{align*}
+  (a+b)+c &= a+(b+c) \\
+  a+b &= b+a \\
+  a(b+c) &= ab+ac
+\end{align*}
+这些律源自环的公理，是多项式化简与重写的基础。
+
+    	\textbf{工程实现：} 在 E-Graph 中，这些律通过重写规则（rewrite rules）实现。例如，\texttt{add(a, b) -> add(b, a)}、\texttt{mul(a, add(b, c)) -> add(mul(a, b), mul(a, c))} 等。规则的应用会合并等价类，实现表达式的规范化。
+
+\subsection{同类项合并}
+  	\textbf{理论基础：} 同类项指变量幂次、名称完全相同的项。合并同类项即将系数相加，如 $2x^2 + 3x^2 = 5x^2$。
+
+  	\textbf{工程实现：} 在 DAG/E-Graph 中，通过模式匹配和重写规则（如 \texttt{add(k1 * a, k2 * a) -> mul(add(k1, k2), a)}）自动完成同类项合并。
+
+\subsection{多项式标准化}
+  	\textbf{理论基础：} 多项式标准化包括项排序（如按幂次降序）、变量顺序固定等，便于比较和进一步化简。
+
+  	\textbf{工程实现：} E-Graph 的 extraction 阶段可结合代价函数（如节点数、嵌套深度、排序规则）选取规范化表达式作为代表。
+
+\subsection{多项式展开与因式分解}
+  	\textbf{理论基础：} 展开是将乘积形式转为和的形式（如 $(x+1)(x-2)=x^2-x-2$），因式分解则反之。理论上依赖分配律、提取公因式等。
+
+  	\textbf{工程实现：} 展开通过分配律相关重写规则实现。因式分解可通过逆向规则或专门的因式分解算法（如提取公因式、配方法等）实现。
+
+\subsection{代数重写规则}
+  	\textbf{理论基础：} 代数重写规则如 $a^0=1$、$a^1=a$、$0\cdot a=0$、$1\cdot a=a$ 等，源自环的单位元、零元等性质。
+
+  	\textbf{工程实现：} 这些规则以 DSL 或代码形式写入规则库，E-Graph 在 rewrite pass 阶段批量应用，自动完成表达式的简化。
+
+\subsection{多项式加减乘除算法}
+  	\textbf{理论基础：} 加减法通过同类项合并，乘法通过分配律展开，除法可用多项式长除法或带余除法。
+
+  	\textbf{工程实现：} 加减乘通过重写规则和 DAG 结构实现。除法可通过专门的算法实现，也可在 E-Graph 中通过规则（如 \texttt{div(mul(a, b), b) -> a}）进行部分约简。
+
+\subsection{符号化简与规范化}
+  	\textbf{理论基础：} 通过不断应用上述规则，将多项式化为最简、标准或指定形式。
+
+  	\textbf{工程实现：} E-Graph 支持等价饱和（equality saturation），即反复应用所有可用规则，最终通过 extraction 选取最优代表式，实现符号化简与规范化。
+
+\subsection{小结}
+上述各类操作，理论上均有抽象代数的公理或推论支撑，工程上则依赖 DAG/E-Graph 结构与规则库的协同，实现自动化、可扩展的多项式符号计算。
+
+\chapter{工程实现框架：面向数据的 E-Graph 原型（与本项目代码对照）}
+
+\section{为什么采用 ECS/SoA？}
+
+研究型系统的工程约束往往是：
+
+\begin{itemize}
+  \item 需要大量扫描与批处理（例如匹配模式、应用规则、重建索引）；
+  \item 需要可追踪与可调试（每一步都能解释为什么合并）；
+  \item 需要可扩展（增加新算子/新理论时，不希望重写整个对象体系）。
+\end{itemize}
+
+因此，本项目倾向 ``面向数据'' 的表格化存储（SoA/ECS 风格）：
+节点 ID 是数组下标，每列数组是一种属性。
+
+\section{轻量 E-Graph 的最小构成}
+
+本项目现有原型（\texttt{symbolic\_engine.py}）可以被视作一个轻量 E-Graph 思路的工程落点：
+
+\begin{enumerate}
+  \item \textbf{NodeTable}：用 NumPy 数组列存储节点（op、a、b、value、var\_id）；
+  \item \textbf{hash-cons}：构造期 DAG 共享；
+  \item \textbf{Union-Find}：维护等价类（E-Class）；
+  \item \textbf{enode index}：以 (op, e(a), e(b)) key 做同余合并；
+  \item \textbf{rewrite pass}：一组基础规则（目前示例为 0/1 与常量折叠），未来可替换为多项式/理想语义规则；
+  \item \textbf{extraction}：按代价函数从等价类提取代表式。
+\end{enumerate}
+
+\begin{remark}
+为了契合本书研究范围，后续规则库应逐步替换为 ``多项式 + 理想/商结构'' 的化简规则，而不扩展到求导等任务。
+\end{remark}
+
+\chapter{结语：可持续的研究路线}
+
+这本小册子尝试建立一个稳定坐标系：
+
+\begin{itemize}
+  \item 先用多项式与括号嵌套把系统核心机制跑通；
+  \item 用抽象代数（环/理想/商结构）定义等价关系的边界；
+  \item 用 E-Graph（Union-Find + hash-cons + extraction）作为等价维护框架；
+  \item 工程上用面向数据（ECS/SoA）实现可扩展、可批处理的推理平台。
+\end{itemize}
+
+在此基础上，未来的扩展不应以 ``堆更多规则'' 为主要方式，而应以\textbf{更清晰的理论分层 + 更可控的数据结构与代价模型}推进。
+
+\appendix
+\chapter{附录：与本项目文件的对应关系（索引）}
+
+\begin{itemize}
+  \item 原型实现：\texttt{symbolic\_engine.py}
+  \item 公共入口：\texttt{symbolic.py}
+  \item 演示脚本：\texttt{demo.py}
+  \item 回归测试：\texttt{test\_symbolic\_engine.py}
+  \item 聊天记录：\texttt{相关资源/符号计算：AST与DAG表达式...-20260107183224.txt}
+  \item 转载资料（仅借鉴 E-Graph 表征部分）：\texttt{相关资源/转载：为什么函数求导之后表达式长度大大超出原来的表达式 - 酱紫君 的回答.md}
+\end{itemize}
+
+\backmatter
+\chapter*{参考文献}
+\addcontentsline{toc}{chapter}{参考文献}
+
+\begin{thebibliography}{9}
+\bibitem{egg-paper}
+Willsey, M. \textit{et al.} ``egg: Fast and Extensible Equality Saturation.'' (2019).\\
+\url{https://arxiv.org/abs/1904.02990}
+
+\bibitem{deriv-swell}
+酱紫君（转载笔记，仅借鉴 E-Graph 表征部分）. ``为什么函数求导之后表达式长度大大超出原来的表达式？''\\
+\url{https://www.zhihu.com/question/609058716/answer/1954152484693058426}
+\end{thebibliography}
+
+\end{document}

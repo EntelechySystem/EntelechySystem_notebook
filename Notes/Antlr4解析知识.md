@@ -1,0 +1,72 @@
+---
+title: Antlr4解析知识
+authors: Complex System Explorer
+year: 2026-01-10
+tags:
+  - 类型/笔记
+  - 日期/2026-01-10
+  - 内容/Antlr4
+  - 内容/符号计算
+alias:
+  - Antlr4解析知识
+---
+# Antlr4解析知识
+
+
+
+
+### Antlr4 解析
+
+下面对 `mathsymcalc/latex_parser/antlr_latex/parser.py` 中导入的这些 AST 节点做简要说明，说明它们在数学/LaTeX 中表示的含义并给出小例子用于对照。
+
+- `AstNode`  
+  抽象基类，所有具体节点的公共父类，没有具体数学含义，表示 AST 中的任意节点。
+
+- `BinaryOpNode`  
+  二元运算（有明确运算符）的节点，例如加减乘除等。  
+  示例：LaTeX `a + b` 会被表示为
+  ```python
+  # python
+  BinaryOpNode(op='+', left=SymbolNode('a'), right=SymbolNode('b'))
+  ```
+
+- `FracNode`  
+  分数节点，对应 LaTeX 的 `\frac{num}{den}`。包含分子和分母两个子表达式。  
+  示例：LaTeX `\frac{1}{2}` ->  
+  ```python
+  # python
+  FracNode(numerator=NumberNode('1'), denominator=NumberNode('2'))
+  ```
+
+- `GreekNode`  
+  希腊字母或类似的 LaTeX 命令（例如 `\alpha`, `\beta`），节点保存名字（不含反斜杠）。  
+  示例：LaTeX `\alpha` -> `GreekNode(name='alpha')`
+
+- `GroupNode`  
+  分组节点，对应花括号或圆括号等分组结构（例：`{...}` 或 `(...)`），用于控制优先级或作用域。`kind` 表示分组类型（例如 `"brace"` 或 `"paren"`）。
+
+- `NumberNode`  
+  数值字面量节点，保存文本形式的数字（例如 `123`, `3.14`）。
+
+- `SubscriptNode`  
+  下标节点，对应 LaTeX 的 `_` 操作，例如 `x_i` 表示基座 `x` 带下标 `i`。  
+  示例：LaTeX `x_i` ->  
+  ```python
+  # python
+  SubscriptNode(base=SymbolNode('x'), sub=SymbolNode('i'))
+  ```
+
+- `SuperscriptNode`  
+  上标节点，对应 LaTeX 的 `^` 操作，例如 `x^2`。  
+  示例：LaTeX `x^2` ->  
+  ```python
+  # python
+  SuperscriptNode(base=SymbolNode('x'), sup=NumberNode('2'))
+  ```
+
+- `SymbolNode`  
+  变量或符号节点，对应普通标识符或单字符变量（例如 `x`, `y`, `sin` 在此实现中通常作为符号处理，具体语义由上层决定）。
+
+以上说明覆盖了常见的数学构造：数、变量、二元运算、分数、上下标、分组和希腊字母。
+
+

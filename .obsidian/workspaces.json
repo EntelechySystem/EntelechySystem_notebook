@@ -3462,7 +3462,1253 @@
       },
       "active": "2cac8679a360f9c6",
       "mtime": "2025-12-31T11:05:11+08:00"
+    },
+    "数学符号计算": {
+      "main": {
+        "id": "0963b7fcf36b4642",
+        "type": "split",
+        "children": [
+          {
+            "id": "d1b30164d713bf63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2cac8679a360f9c6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/数学符号计算/项目：数学符号计算.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "项目：数学符号计算"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "18b8eb74b3bfd773",
+        "type": "split",
+        "children": [
+          {
+            "id": "30809ca50a85c986",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8228b71c072e93b1",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "byCreatedTime",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "bfda48882468dab2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "概念的一些属性",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e41ef0e271bbca0a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "884bb31a6b698fd0",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "c5382c67a686c9e8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 298.5
+      },
+      "right": {
+        "id": "afa286b78ba5e2b3",
+        "type": "split",
+        "children": [
+          {
+            "id": "3c5e0c47052916de",
+            "type": "tabs",
+            "dimension": 34.42742523705324,
+            "children": [
+              {
+                "id": "d2084c67fe25abd9",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Projects/数学符号计算/项目：数学符号计算.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "项目：数学符号计算 的大纲"
+                }
+              }
+            ]
+          },
+          {
+            "id": "beeca9cea653ba38",
+            "type": "tabs",
+            "dimension": 36.032093362509116,
+            "children": [
+              {
+                "id": "a00d59473a2008a4",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Projects/数学符号计算/项目：数学符号计算.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "项目：数学符号计算 的反向链接列表"
+                }
+              },
+              {
+                "id": "10b5ee6ba4f94e16",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Notes/语言/语言结构.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 语言结构"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ccf47346b35ad94e",
+            "type": "tabs",
+            "dimension": 29.540481400437635,
+            "children": [
+              {
+                "id": "5b979dff4bd06331",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Notes/思维/思维机制.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "path:(\"Theory\" OR \"Collection\" OR \"Design\" OR \"Notes\" OR \"Resource\")",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "path:(\"Theory/EntelechySystem\" OR \"Theory/定义术语\") OR tags:(\"#项目/EntelechySystem\" OR \"#内容/术语\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65535
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ComplexIntelligenceSystem \" OR \"Notes/机制\" OR \"Notes/机器功能\" OR \"Notes/硬件\" OR \"Notes/思维\") OR tags:(\"tag:#项目/CIS\" OR \"tag:#内容/思维\" OR \"tag:#内容/认知\" OR \"tag:#内容/任务\" OR \"tag:#内容/决策\" OR \"tag:#内容/机制\" OR \"tag:#内容/功能\" OR \"#内容/机器\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65280
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ElementalConceptionSystem\" OR \"Notes/意象\" OR \"Notes/语言\" OR \"Notes/概念\" OR \"Notes/语言\") OR tags:(\"#项目/ECS\" OR \"#内容/玄学\" OR \"#内容/概念\" OR \"#内容/语言\" OR \"#内容/构式\" OR \"#内容/知识\" OR \"#内容/语义\" OR \"#内容/意象\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16711680
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/LifeManagementSystem\" OR \"Notes/个人与社会属性\" OR \"Notes/人生\") OR tags:(\"#项目/LMS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16772864
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/AgentsWorldSystem\" OR \"Notes/多智能体\" OR \"Notes/世界\") OR tags:(\"#项目/AWS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 255
+                          }
+                        },
+                        {
+                          "query": "path:Collection",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13619151
+                          }
+                        },
+                        {
+                          "query": "path:Notes",
+                          "color": {
+                            "a": 1,
+                            "rgb": 0
+                          }
+                        }
+                      ],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 2.05797334558824,
+                      "lineSizeMultiplier": 5,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 语言结构"
+                }
+              },
+              {
+                "id": "ee83850e9af6f35a",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 370.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "zk-prefixer:创建时间戳笔记": false,
+          "random-note:开始漫游笔记": false,
+          "audio-recorder:开始/结束录音": false,
+          "workspaces:管理工作区布局": false,
+          "bases:新建数据库": false,
+          "open-vscode:VSCode": false
+        }
+      },
+      "active": "2cac8679a360f9c6",
+      "mtime": "2026-03-18T18:20:39+08:00"
+    },
+    "通用任务事务运作流程管理": {
+      "main": {
+        "id": "0963b7fcf36b4642",
+        "type": "split",
+        "children": [
+          {
+            "id": "d1b30164d713bf63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2cac8679a360f9c6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/通用事务任务运作流程管理/项目：通用任务事务运作流程管理.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "项目：通用任务事务运作流程管理"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "18b8eb74b3bfd773",
+        "type": "split",
+        "children": [
+          {
+            "id": "30809ca50a85c986",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8228b71c072e93b1",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "byCreatedTime",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "bfda48882468dab2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "概念的一些属性",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e41ef0e271bbca0a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "884bb31a6b698fd0",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "c5382c67a686c9e8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 298.5
+      },
+      "right": {
+        "id": "afa286b78ba5e2b3",
+        "type": "split",
+        "children": [
+          {
+            "id": "3c5e0c47052916de",
+            "type": "tabs",
+            "dimension": 34.42742523705324,
+            "children": [
+              {
+                "id": "d2084c67fe25abd9",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Projects/通用事务任务运作流程管理/项目：通用任务事务运作流程管理.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "项目：通用任务事务运作流程管理 的大纲"
+                }
+              }
+            ]
+          },
+          {
+            "id": "beeca9cea653ba38",
+            "type": "tabs",
+            "dimension": 36.032093362509116,
+            "children": [
+              {
+                "id": "a00d59473a2008a4",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Projects/通用事务任务运作流程管理/项目：通用任务事务运作流程管理.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "项目：通用任务事务运作流程管理 的反向链接列表"
+                }
+              },
+              {
+                "id": "10b5ee6ba4f94e16",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Notes/语言/语言结构.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 语言结构"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ccf47346b35ad94e",
+            "type": "tabs",
+            "dimension": 29.540481400437635,
+            "children": [
+              {
+                "id": "5b979dff4bd06331",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Notes/思维/思维机制.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "path:(\"Theory\" OR \"Collection\" OR \"Design\" OR \"Notes\" OR \"Resource\")",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "path:(\"Theory/EntelechySystem\" OR \"Theory/定义术语\") OR tags:(\"#项目/EntelechySystem\" OR \"#内容/术语\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65535
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ComplexIntelligenceSystem \" OR \"Notes/机制\" OR \"Notes/机器功能\" OR \"Notes/硬件\" OR \"Notes/思维\") OR tags:(\"tag:#项目/CIS\" OR \"tag:#内容/思维\" OR \"tag:#内容/认知\" OR \"tag:#内容/任务\" OR \"tag:#内容/决策\" OR \"tag:#内容/机制\" OR \"tag:#内容/功能\" OR \"#内容/机器\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65280
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ElementalConceptionSystem\" OR \"Notes/意象\" OR \"Notes/语言\" OR \"Notes/概念\" OR \"Notes/语言\") OR tags:(\"#项目/ECS\" OR \"#内容/玄学\" OR \"#内容/概念\" OR \"#内容/语言\" OR \"#内容/构式\" OR \"#内容/知识\" OR \"#内容/语义\" OR \"#内容/意象\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16711680
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/LifeManagementSystem\" OR \"Notes/个人与社会属性\" OR \"Notes/人生\") OR tags:(\"#项目/LMS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16772864
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/AgentsWorldSystem\" OR \"Notes/多智能体\" OR \"Notes/世界\") OR tags:(\"#项目/AWS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 255
+                          }
+                        },
+                        {
+                          "query": "path:Collection",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13619151
+                          }
+                        },
+                        {
+                          "query": "path:Notes",
+                          "color": {
+                            "a": 1,
+                            "rgb": 0
+                          }
+                        }
+                      ],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 2.05797334558824,
+                      "lineSizeMultiplier": 5,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 语言结构"
+                }
+              },
+              {
+                "id": "ee83850e9af6f35a",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 370.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "zk-prefixer:创建时间戳笔记": false,
+          "random-note:开始漫游笔记": false,
+          "audio-recorder:开始/结束录音": false,
+          "workspaces:管理工作区布局": false,
+          "bases:新建数据库": false,
+          "open-vscode:VSCode": false
+        }
+      },
+      "active": "2cac8679a360f9c6",
+      "mtime": "2026-03-18T18:22:19+08:00"
+    },
+    "学术科研自动工作流": {
+      "main": {
+        "id": "0963b7fcf36b4642",
+        "type": "split",
+        "children": [
+          {
+            "id": "d1b30164d713bf63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "612472c60255e445",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/学术科研自动工作流/项目：学术科研自动工作流.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "项目：学术科研自动工作流"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "18b8eb74b3bfd773",
+        "type": "split",
+        "children": [
+          {
+            "id": "30809ca50a85c986",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8228b71c072e93b1",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "byCreatedTime",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "bfda48882468dab2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "概念的一些属性",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e41ef0e271bbca0a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "884bb31a6b698fd0",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "c5382c67a686c9e8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 298.5
+      },
+      "right": {
+        "id": "afa286b78ba5e2b3",
+        "type": "split",
+        "children": [
+          {
+            "id": "3c5e0c47052916de",
+            "type": "tabs",
+            "dimension": 34.42742523705324,
+            "children": [
+              {
+                "id": "d2084c67fe25abd9",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Projects/学术科研自动工作流/项目：学术科研自动工作流.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "项目：学术科研自动工作流 的大纲"
+                }
+              }
+            ]
+          },
+          {
+            "id": "beeca9cea653ba38",
+            "type": "tabs",
+            "dimension": 36.032093362509116,
+            "children": [
+              {
+                "id": "a00d59473a2008a4",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Projects/学术科研自动工作流/项目：学术科研自动工作流.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "项目：学术科研自动工作流 的反向链接列表"
+                }
+              },
+              {
+                "id": "10b5ee6ba4f94e16",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Notes/语言/语言结构.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 语言结构"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ccf47346b35ad94e",
+            "type": "tabs",
+            "dimension": 29.540481400437635,
+            "children": [
+              {
+                "id": "5b979dff4bd06331",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Notes/思维/思维机制.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "path:(\"Theory\" OR \"Collection\" OR \"Design\" OR \"Notes\" OR \"Resource\")",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "path:(\"Theory/EntelechySystem\" OR \"Theory/定义术语\") OR tags:(\"#项目/EntelechySystem\" OR \"#内容/术语\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65535
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ComplexIntelligenceSystem \" OR \"Notes/机制\" OR \"Notes/机器功能\" OR \"Notes/硬件\" OR \"Notes/思维\") OR tags:(\"tag:#项目/CIS\" OR \"tag:#内容/思维\" OR \"tag:#内容/认知\" OR \"tag:#内容/任务\" OR \"tag:#内容/决策\" OR \"tag:#内容/机制\" OR \"tag:#内容/功能\" OR \"#内容/机器\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65280
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ElementalConceptionSystem\" OR \"Notes/意象\" OR \"Notes/语言\" OR \"Notes/概念\" OR \"Notes/语言\") OR tags:(\"#项目/ECS\" OR \"#内容/玄学\" OR \"#内容/概念\" OR \"#内容/语言\" OR \"#内容/构式\" OR \"#内容/知识\" OR \"#内容/语义\" OR \"#内容/意象\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16711680
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/LifeManagementSystem\" OR \"Notes/个人与社会属性\" OR \"Notes/人生\") OR tags:(\"#项目/LMS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16772864
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/AgentsWorldSystem\" OR \"Notes/多智能体\" OR \"Notes/世界\") OR tags:(\"#项目/AWS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 255
+                          }
+                        },
+                        {
+                          "query": "path:Collection",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13619151
+                          }
+                        },
+                        {
+                          "query": "path:Notes",
+                          "color": {
+                            "a": 1,
+                            "rgb": 0
+                          }
+                        }
+                      ],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 2.05797334558824,
+                      "lineSizeMultiplier": 5,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 语言结构"
+                }
+              },
+              {
+                "id": "ee83850e9af6f35a",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 370.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "zk-prefixer:创建时间戳笔记": false,
+          "random-note:开始漫游笔记": false,
+          "audio-recorder:开始/结束录音": false,
+          "workspaces:管理工作区布局": false,
+          "bases:新建数据库": false,
+          "open-vscode:VSCode": false
+        }
+      },
+      "active": "612472c60255e445",
+      "mtime": "2026-03-18T18:23:18+08:00"
+    },
+    "ECS": {
+      "main": {
+        "id": "0963b7fcf36b4642",
+        "type": "split",
+        "children": [
+          {
+            "id": "d1b30164d713bf63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e515df2aadf95315",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/ECS/项目：ECS.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "项目：ECS"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "18b8eb74b3bfd773",
+        "type": "split",
+        "children": [
+          {
+            "id": "30809ca50a85c986",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8228b71c072e93b1",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "byCreatedTime",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "bfda48882468dab2",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "概念的一些属性",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e41ef0e271bbca0a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "884bb31a6b698fd0",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "c5382c67a686c9e8",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "recent-files"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 298.5
+      },
+      "right": {
+        "id": "afa286b78ba5e2b3",
+        "type": "split",
+        "children": [
+          {
+            "id": "3c5e0c47052916de",
+            "type": "tabs",
+            "dimension": 34.42742523705324,
+            "children": [
+              {
+                "id": "d2084c67fe25abd9",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Projects/ECS/项目：ECS.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "项目：ECS 的大纲"
+                }
+              }
+            ]
+          },
+          {
+            "id": "beeca9cea653ba38",
+            "type": "tabs",
+            "dimension": 36.032093362509116,
+            "children": [
+              {
+                "id": "a00d59473a2008a4",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Projects/ECS/项目：ECS.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "项目：ECS 的反向链接列表"
+                }
+              },
+              {
+                "id": "10b5ee6ba4f94e16",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Notes/语言/语言结构.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": false
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 语言结构"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ccf47346b35ad94e",
+            "type": "tabs",
+            "dimension": 29.540481400437635,
+            "children": [
+              {
+                "id": "5b979dff4bd06331",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "Notes/思维/思维机制.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "path:(\"Theory\" OR \"Collection\" OR \"Design\" OR \"Notes\" OR \"Resource\")",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [
+                        {
+                          "query": "path:(\"Theory/EntelechySystem\" OR \"Theory/定义术语\") OR tags:(\"#项目/EntelechySystem\" OR \"#内容/术语\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65535
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ComplexIntelligenceSystem \" OR \"Notes/机制\" OR \"Notes/机器功能\" OR \"Notes/硬件\" OR \"Notes/思维\") OR tags:(\"tag:#项目/CIS\" OR \"tag:#内容/思维\" OR \"tag:#内容/认知\" OR \"tag:#内容/任务\" OR \"tag:#内容/决策\" OR \"tag:#内容/机制\" OR \"tag:#内容/功能\" OR \"#内容/机器\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 65280
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/ElementalConceptionSystem\" OR \"Notes/意象\" OR \"Notes/语言\" OR \"Notes/概念\" OR \"Notes/语言\") OR tags:(\"#项目/ECS\" OR \"#内容/玄学\" OR \"#内容/概念\" OR \"#内容/语言\" OR \"#内容/构式\" OR \"#内容/知识\" OR \"#内容/语义\" OR \"#内容/意象\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16711680
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/LifeManagementSystem\" OR \"Notes/个人与社会属性\" OR \"Notes/人生\") OR tags:(\"#项目/LMS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 16772864
+                          }
+                        },
+                        {
+                          "query": "path:(\"Theory/AgentsWorldSystem\" OR \"Notes/多智能体\" OR \"Notes/世界\") OR tags:(\"#项目/AWS\")",
+                          "color": {
+                            "a": 1,
+                            "rgb": 255
+                          }
+                        },
+                        {
+                          "query": "path:Collection",
+                          "color": {
+                            "a": 1,
+                            "rgb": 13619151
+                          }
+                        },
+                        {
+                          "query": "path:Notes",
+                          "color": {
+                            "a": 1,
+                            "rgb": 0
+                          }
+                        }
+                      ],
+                      "collapse-display": true,
+                      "showArrow": true,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 2.05797334558824,
+                      "lineSizeMultiplier": 5,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 1,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 语言结构"
+                }
+              },
+              {
+                "id": "ee83850e9af6f35a",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 370.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "zk-prefixer:创建时间戳笔记": false,
+          "random-note:开始漫游笔记": false,
+          "audio-recorder:开始/结束录音": false,
+          "workspaces:管理工作区布局": false,
+          "bases:新建数据库": false,
+          "open-vscode:VSCode": false
+        }
+      },
+      "active": "e515df2aadf95315",
+      "mtime": "2026-03-18T19:10:18+08:00"
     }
   },
-  "active": "empty"
+  "active": "通用任务事务运作流程管理"
 }
