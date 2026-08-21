@@ -1,0 +1,48 @@
+{
+  "status": "WARN",
+  "stats": {
+    "opencode_skill_count": 43,
+    "contract_count": 43,
+    "active_contract_count": 15,
+    "planned_contract_count": 28,
+    "aok_affair_count": 53,
+    "ark_skill_module_count": 28
+  },
+  "gaps": {
+    "missing_in_contracts": [],
+    "extra_in_contracts": [],
+    "duplicate_skill_ids": [],
+    "missing_ark_modules": [],
+    "missing_aok_affairs": [],
+    "pending_activation": [
+      "aliyun-bailian-sdk-bootstrap",
+      "api-data-fetch",
+      "ark-workflow-executor",
+      "citation-verification",
+      "cn-local-library-manager",
+      "cn-subscribed-literature-access",
+      "cn-web-acquisition",
+      "cnki-advanced-search",
+      "cnki-download",
+      "cnki-export",
+      "cnki-journal-index",
+      "cnki-journal-search",
+      "cnki-journal-toc",
+      "cnki-navigate-pages",
+      "cnki-paper-detail",
+      "cnki-parse-results",
+      "cnki-search",
+      "ml-paper-writing",
+      "model-routing-dispatch",
+      "paper-self-review",
+      "research-ideation",
+      "results-analysis",
+      "review-response",
+      "scheduler-dispatch",
+      "taskdb-bootstrap",
+      "taskdb-replay",
+      "taskdb-validate",
+      "whitelist-governance-check"
+    ]
+  }
+}
