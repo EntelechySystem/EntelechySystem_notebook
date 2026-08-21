@@ -1386,3 +1386,6 @@ FodyWeavers.xsd
 
 /.trash
 
+
+# FreeFileSync 锁文件
+*.ffs_lock
