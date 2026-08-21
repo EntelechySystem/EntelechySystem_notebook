@@ -5,7 +5,6 @@ year: {{date:YYYY-MM-DD}}
 tags:
   - 类型/想法
   - 日期/{{date:YYYY-MM-DD}}
-aliases: 
 ---
 
 

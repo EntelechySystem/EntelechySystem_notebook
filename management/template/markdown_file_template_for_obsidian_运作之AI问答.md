@@ -3,12 +3,12 @@ title: 交流：{{title}}-{{date:YYYYMMDDHHmmss}}
 authors: Ethan Lin
 year: {{date:YYYY-MM-DD}}
 tags:
-  - 类型/AI问答笔记 
+  - 类型/AI问答笔记
   - 类型/交流
-  - 日期/{{date:YYYY-MM-DD}} 
+  - 日期/{{date:YYYY-MM-DD}}
   - 类型/运作
   - 运作/交流
-alias:
+aliases:
   - {{title}}
 ---
 # 交流：{{title}}-{{date:YYYYMMDDHHmmss}}

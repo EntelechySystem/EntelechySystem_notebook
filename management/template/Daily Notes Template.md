@@ -3,12 +3,12 @@ title: {{title}}
 authors: Ethan Lin
 year: {{date:YYYY-MM-DD}}
 tags:
-  - 类型/日志 
-  - 日期/{{date:YYYY-MM-DD}} 
+  - 类型/日志
+  - 日期/{{date:YYYY-MM-DD}}
 ---
 
 
-# Daily Notes
+# Daily 笔记
 
 
 # 计划、记录

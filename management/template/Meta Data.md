@@ -1,7 +1,8 @@
 ---
+title: 
 
-alias: %(citekey) title: date: tags: ["#zotero","#book","#article"]
-
+aliases:
+  - %(citekey) title: date: tags: ["#zotero","#book","#article"]
 ---
 # Meta Data
 
