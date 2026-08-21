@@ -3,9 +3,9 @@ title: Jonathan Haidt之道德基础理论
 authors: Ethan Lin
 year: 2022-06-22 
 tags:
-  - 日期/2022-06-22 
-  - 内容/道德 
-  - 类型/转载 
+  - 日期/2022-06-22
+  - 内容/道德
+  - 类型/转载
 ---
 
 
