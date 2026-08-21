@@ -3,8 +3,8 @@ title: Petri网能否用于建模语义流网络
 authors: Ethan Lin
 year: 2022-07-07 
 tags:
-  - 类型/想法  
-  - 日期/2022-07-07 
+  - 类型/想法
+  - 日期/2022-07-07
 ---
 
 
@@ -27,6 +27,6 @@ $M \quad and \quad M_0$表示什么？
 
 
 关于Petri网教程：
-![[Petri网#^ncbrqm]]
+Petri网#^ncbrqm
 
 
