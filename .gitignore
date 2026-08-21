@@ -11,9 +11,6 @@ Resource/Subjects/
 Reference/
 
 .obsidian*/*
-!.obsidian/workspaces.json
-!.obsidian/hotkeys.json
-!.obsidian/bookmarks.json
 
 /Subjects
 
